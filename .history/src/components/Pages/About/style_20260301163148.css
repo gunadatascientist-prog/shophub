@@ -1,0 +1,280 @@
+/* Main container */
+.about-container {
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+/* Hero Section */
+.about-hero {
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
+  margin-bottom: 40px;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.about-image-wrapper {
+  flex: 0 0 50%;
+  max-width: 50%;
+}
+
+.about-image {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 80%;
+}
+
+.about-content {
+  flex: 0 0 45%;
+  max-width: 45%;
+}
+
+.about-content h1 {
+  margin-bottom: 20px;
+  font-size: 2.5rem;
+  color: #333;
+}
+
+.about-text p {
+  line-height: 1.8;
+  color: #666;
+  margin-bottom: 15px;
+}
+
+/* Slider Section */
+.about-slider {
+  margin-bottom: 60px;
+  width: 100%;
+}
+
+/* Services Section */
+.services-section {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.services-section h2 {
+  font-size: 2rem;
+  margin-bottom: 15px;
+}
+
+.wave-decoration {
+  display: flex;
+  justify-content: center;
+  margin-top: 15px;
+}
+
+/* Services Container */
+.services-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 30px;
+  margin-bottom: 60px;
+  flex-wrap: nowrap;
+}
+
+.service-card {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 20px;
+  padding: 30px;
+  border: 1px solid #eee;
+  border-radius: 10px;
+  flex: 0 0 45%;
+  max-width: 45%;
+  transition: all 0.3s ease;
+}
+
+.service-card:hover {
+  border: 4px solid #f99292;
+  border-radius: 50px;
+}
+
+.service-icon {
+  width: 80px;
+  height: 80px;
+  object-fit: contain;
+  flex-shrink: 0;
+}
+
+.service-content h3 {
+  margin-bottom: 10px;
+  font-size: 1.25rem;
+}
+
+.service-content p {
+  color: #666;
+  line-height: 1.6;
+}
+
+/* Performance Section */
+.performance-section {
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
+  margin-top: 40px;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.performance-image {
+  flex: 0 0 45%;
+  max-width: 45%;
+}
+
+.performance-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.performance-content {
+  flex: 0 0 50%;
+  max-width: 50%;
+}
+
+.performance-content h3 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.performance-content h4 {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+  color: #555;
+}
+
+.performance-content p {
+  line-height: 1.8;
+  color: #666;
+  margin-bottom: 15px;
+}
+
+/* Responsive Design - Tablet */
+@media (max-width: 992px) {
+  .about-hero {
+    flex-direction: row;
+    flex-wrap: nowrap;
+    gap: 20px;
+  }
+
+  .about-image-wrapper {
+    flex: 0 0 48%;
+    max-width: 48%;
+  }
+
+  .about-content {
+    flex: 0 0 48%;
+    max-width: 48%;
+  }
+
+  .about-content h1 {
+    font-size: 2rem;
+  }
+
+  .services-container {
+    flex-wrap: wrap;
+  }
+
+  .service-card {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+
+  .performance-section {
+    flex-direction: row;
+    flex-wrap: nowrap;
+    gap: 20px;
+  }
+
+  .performance-image {
+    flex: 0 0 48%;
+    max-width: 48%;
+  }
+
+  .performance-content {
+    flex: 0 0 48%;
+    max-width: 48%;
+  }
+}
+
+/* Responsive Design - Mobile */
+@media (max-width: 768px) {
+  .about-hero {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .about-image-wrapper,
+  .about-content {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+
+  .about-image {
+    width: 80%;
+    margin: 0 auto;
+    display: block;
+  }
+
+  .about-content h1 {
+    font-size: 1.75rem;
+    text-align: center;
+  }
+
+  .about-text {
+    text-align: justify;
+  }
+
+  .services-container {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .service-card {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .performance-section {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .performance-image,
+  .performance-content {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+
+  .performance-content h3 {
+    font-size: 1.5rem;
+  }
+
+  .performance-content h4 {
+    font-size: 1.25rem;
+  }
+}
+
+/* Small Mobile */
+@media (max-width: 480px) {
+  .about-image {
+    width: 100%;
+  }
+
+  .service-card {
+    padding: 15px;
+  }
+
+  .service-icon {
+    width: 60px;
+    height: 60px;
+  }
+}

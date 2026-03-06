@@ -1,0 +1,328 @@
+header {
+  width: 100%;
+  height: auto;
+  min-height: 90px;
+  margin: auto;
+  padding: 15px 30px;
+  display: flex;
+  align-items: center;
+  background: #fff;
+  box-shadow: 0 2px 15px rgba(0, 0, 0, 0.05);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+
+/* Logo styling */
+header .col-2 img {
+  max-width: 160px;
+  height: auto;
+  transition: transform 0.3s ease;
+  display :inline-block;
+}
+
+header .col-2 img:hover {
+  transform: scale(1.05);
+}
+
+/* Header search styling */
+header .header-search {
+  width: 100%;
+  height: 48px;
+  border: 2px solid #3b82f6;
+  border-radius: 25px;
+  padding: 5px 5px 5px 15px;
+  display: flex;
+  align-items: center;
+  background: #fff;
+  transition: box-shadow 0.3s ease;
+  display :inline-block;
+}
+
+header .header-search:hover {
+  box-shadow: 0 4px 20px rgba(59, 130, 246, 0.25);
+}
+
+header .header-search .selecrDrop {
+  width: 220px;
+  font-weight: 500;
+  font-size: 14px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding-right: 15px;
+  border-right: 1px solid #e0e0e0;
+  margin-right: 15px;
+}
+
+header .header-search .selecrDrop .openselect {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #333;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+header .header-search .selecrDrop .openselect .arrow {
+  font-size: 18px;
+  color: #3b82f6;
+  transition: transform 0.3s ease;
+}
+
+header .header-search .search {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+header .header-search .search input {
+  width: 100%;
+  height: 36px;
+  border: none;
+  outline: none;
+  font-size: 15px;
+  padding-right: 45px;
+  color: #333;
+}
+
+header .header-search .search input::placeholder {
+  color: #999;
+}
+
+header .header-search .search .searchicon {
+  position: absolute;
+  right: 8px;
+  width: 36px;
+  height: 36px;
+  font-size: 22px !important;
+  color: #fff;
+  background: #3b82f6;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+header .header-search .search .searchicon:hover {
+  background: #1d4ed8;
+  transform: scale(1.1);
+}
+
+header .header-search .search .searchicon:active {
+  background: #d81d4f;
+  transform: scale(1.1);
+}
+
+/* Country wrapper styling */
+header .CountryWrapper {
+  display: flex;
+  align-items: center;
+}
+
+header .CountryWrapper .selecrDrop {
+  width: 180px !important;
+  height: 48px;
+  border: 1px solid #e0e0e0;
+  display: flex;
+  align-items: center;
+  padding: 0 15px;
+  border-radius: 25px;
+  background: #fff;
+  transition: all 0.3s ease;
+}
+
+header .CountryWrapper .selecrDrop:hover {
+  border-color: #3b82f6;
+  box-shadow: 0 4px 15px rgba(59, 130, 246, 0.2);
+}
+
+header .CountryWrapper .selecrDrop .openselect {
+  width: auto;
+  font-size: 14px;
+}
+
+header .CountryWrapper .openselect {
+  color: #2563eb;
+}
+
+header .CountryWrapper .selecrDrop .selectDrop {
+  left: 0 !important;
+  border-radius: 12px;
+}
+
+
+header .headerTabs {
+  padding-left: 0;
+  display: flex;
+  gap: 8px;
+  justify-content: flex-end;
+}
+
+header .headerTabs li {
+  list-style: none;
+}
+
+header .headerTabs li span {
+  position: relative;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+  padding: 10px 16px;
+  border-radius: 12px;
+  color: #555;
+  transition: all 0.3s ease;
+  background: transparent;
+}
+
+header .headerTabs li span:hover {
+  background: rgba(59, 130, 246, 0.1);
+  color: #3b82f6;
+}
+
+header .headerTabs li span img {
+  width: 24px;
+  height: 24px;
+  transition: transform 0.3s ease;
+}
+
+header .headerTabs li span:hover img {
+  transform: scale(1.15);
+}
+
+header .headerTabs li span .badge {
+  position: absolute;
+  min-width: 20px;
+  height: 20px;
+  color: #fff;
+  font-weight: 600;
+  font-size: 11px;
+  background: #ff6b6b;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 6px;
+  margin-top: -8px;
+  margin-left: 12px;
+  box-shadow: 0 2px 8px rgba(255, 107, 107, 0.4);
+}
+
+
+header .header-icon-wrap {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+}
+
+header .header-icon-wrap .icon-label {
+  font-size: 12px;
+  font-weight: 500;
+  color: #555;
+  transition: color 0.3s ease;
+}
+
+header .header-icon-wrap:hover .icon-label {
+  color: #3b82f6;
+}
+
+/* Dropdown menu styling */
+header .dropdownMenu {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 200px;
+  height: auto;
+  background: #fff;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+  border-radius: 8px;
+  padding: 8px 0;
+  z-index: 1001;
+  margin-top: 10px;
+}
+
+header .headerTabs li span:hover .dropdownMenu {
+  margin-top: 5px;
+}
+
+header .dropdownMenu li {
+  width: 100%;
+  list-style: none;
+}
+
+header .dropdownMenu li button {
+  width: 100% !important;
+  text-align: left !important;
+  justify-content: flex-start !important;
+  color: #333 !important;
+  text-transform: capitalize !important;
+  padding: 10px 16px;
+  font-size: 14px;
+  font-weight: 500;
+  transition: all 0.2s ease;
+}
+
+header .dropdownMenu li button:hover {
+  background: rgba(59, 130, 246, 0.1);
+  color: #3b82f6 !important;
+}
+
+/* Responsive adjustments */
+@media (max-width: 992px) {
+  header {
+    padding: 15px;
+  }
+  
+  header .header-search {
+    width: 100%;
+    margin-top: 15px;
+  }
+  
+  header .headerTabs {
+    padding-left: 0;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 15px;
+  }
+  
+  header .col-2,
+  header .col-3,
+  header .col-4 {
+    margin-bottom: 15px;
+  }
+  
+  header .dropdownMenu {
+    left: 0;
+    transform: none;
+  }
+}
+
+@media (max-width: 576px) {
+  header .header-search {
+    flex-direction: column;
+    height: auto;
+    padding: 10px;
+  }
+  
+  header .header-search .selecrDrop {
+    width: 100%;
+    border-right: none;
+    border-bottom: 1px solid #e0e0e0;
+    margin-bottom: 10px;
+  }
+  
+  header .header-search .search {
+    width: 100%;
+  }
+}

@@ -1,0 +1,414 @@
+.homeSlider {
+    padding: 0 20px 30px;
+    background: linear-gradient(135deg, var(--bg-light), var(--bg-cream));
+}
+
+.home_slider_Main {
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.15);
+}
+
+.home_slider_Main .slick-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 450px;
+    position: relative;
+}
+
+.home_slider_Main .slick-slide > div {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.home_slider_Main .item {
+    position: relative;
+    width: 100%;
+    height: 450px;
+}
+
+.home_slider_Main .item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.home_slider_Main  .info {
+    position: absolute;
+    top: 50%;
+    left: 8%;
+    transform: translateY(-50%);
+    z-index: 100;
+    max-width: 500px;
+}
+
+.home_slider_Main  .info h2 {
+    font-size: 48px;
+    font-weight: 800;
+    color: #1a1a1a;
+    line-height: 1.2;
+    margin-bottom: 15px;
+    text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.8);
+}
+
+.home_slider_Main  .info p {
+    font-size: 18px;
+    font-weight: 500;
+    color: #333;
+    margin-bottom: 25px;
+}
+
+
+.home_slider_Main  .shop-btn {
+    display: inline-block;
+    padding: 14px 35px;
+    background: linear-gradient(135deg, #ff4757 0%, #c0392b 100%);
+    color: #fff !important;
+    border-radius: 30px;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 14px;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    box-shadow: 0 4px 15px rgba(255, 71, 87, 0.4);
+}
+
+.home_slider_Main  .shop-btn:hover {
+    background: linear-gradient(135deg, #c0392b 0%, #a93226 100%);
+    transform: translateY(-3px);
+    box-shadow: 0 8px 25px rgba(255, 71, 87, 0.5);
+}
+
+
+.home_slider_Main .slick-arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 50px !important;
+    height: 50px !important;
+    border-radius: 50% !important;
+    background: rgba(255, 255, 255, 0.95) !important;
+    z-index: 1000 !important;
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+    cursor: pointer;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.home_slider_Main .slick-arrow:hover {
+    background: #fff !important;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+    transform: translateY(-50%) scale(1.1);
+}
+
+.home_slider_Main .slick-next {
+    right: 25px !important;
+}
+
+.home_slider_Main .slick-prev {
+    left: 25px !important;
+}
+
+.homeSlider:hover  .slick-arrow {
+    opacity: 1;
+    visibility: visible;
+}
+
+.home_slider_Main .slick-arrow::before {
+    content: '‹' !important;
+    font-size: 30px;
+    color: #ff4757;
+    font-weight: bold;
+}
+
+.home_slider_Main .slick-next::before {
+    content: '›' !important;
+}
+
+
+.home_slider_Main .slick-dots {
+    position: absolute !important;
+    bottom: 25px !important;
+    left: 0 !important;
+    right: 0 !important;
+    margin: 0 auto !important;
+    width: max-content !important;
+    display: flex !important;
+    justify-content: center !important;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    gap: 8px;
+    z-index: 10;
+}
+
+.home_slider_Main .slick-dots li {
+    margin: 0;
+    width: 16px;
+    height: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.3s ease;
+}
+
+.home_slider_Main .slick-dots li:hover {
+    transform: scale(1.2);
+}
+
+.home_slider_Main .slick-dots li button {
+    width: 10px;
+    height: 10px;
+    padding: 0;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.6);
+    border: 2px solid #fff;
+    cursor: pointer;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    position: relative;
+}
+
+.home_slider_Main .slick-dots li button::before {
+    display: none;
+}
+
+.home_slider_Main .slick-dots li.slick-active button {
+    background: #ff4757;
+    width: 35px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(255, 71, 87, 0.5);
+}
+
+
+.homeSlider .newsLetterBanner {
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 10;
+    width: 100%;
+    max-width: 500px;
+    display: flex;
+    gap: 10px;
+    padding: 0 20px;
+}
+
+.homeSlider  .input-wrapper {
+    position: relative;
+    flex: 1;
+    height: 50px;
+}
+
+.homeSlider .newsLetterBanner input {
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    border-radius: 30px;
+    border: none;
+    outline: none;
+    padding: 0 25px 0 50px;
+    font-size: 15px;
+    color: #333;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+    transition: all 0.3s ease;
+}
+
+.homeSlider .newsLetterBanner input:focus {
+    box-shadow: 0 6px 25px rgba(255, 71, 87, 0.2);
+    border: 2px solid #ff4757;
+}
+
+.homeSlider .newsLetterBanner input::placeholder {
+    color: #999;
+}
+
+
+.homeSlider  .subscribe-btn {
+    height: 42px;
+    padding: 0 25px !important;
+    border-radius: 30px !important;
+    color: #fff !important;
+    background: linear-gradient(135deg, #ff4757 0%, #c0392b 100%) !important;
+    font-weight: 600 !important;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    font-size: 13px !important;
+    transition: all 0.3s ease !important;
+    box-shadow: 0 4px 15px rgba(255, 71, 87, 0.4);
+    white-space: nowrap;
+}
+
+.homeSlider  .subscribe-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(255, 71, 87, 0.5);
+}
+
+.homeSlider .newsLetterBanner svg {
+    position: absolute;
+    top: 16px;
+    left: 20px;
+    z-index: 20;
+    font-size: 22px !important;
+    color: #ff4757;
+}
+
+
+@media (max-width: 992px) {
+    .home_slider_Main .slick-slide {
+        min-height: 350px;
+    }
+    
+    .home_slider_Main .item {
+        height: 350px;
+    }
+    
+    .home_slider_Main  .info h2 {
+        font-size: 36px;
+    }
+    
+    .home_slider_Main  .info p {
+        font-size: 16px;
+    }
+    
+    .homeSlider .newsLetterBanner {
+        bottom: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .home_slider_Main .slick-slide {
+        min-height: 280px;
+    }
+    
+    .home_slider_Main .item {
+        height: 280px;
+    }
+    
+    .home_slider_Main  .info {
+        left: 5%;
+        max-width: 300px;
+    }
+    
+    .home_slider_Main .info h2 {
+        font-size: 28px;
+    }
+    
+    .home_slider_Main  .info p {
+        font-size: 14px;
+        margin-bottom: 15px;
+    }
+    
+    .home_slider_Main  .shop-btn {
+        padding: 10px 25px;
+        font-size: 12px;
+    }
+    
+    .home_slider_Main .slick-arrow {
+        width: 40px !important;
+        height: 40px !important;
+    }
+    
+    .home_slider_Main .slick-next {
+        right: 15px !important;
+    }
+    
+    .home_slider_Main .slick-prev {
+        left: 15px !important;
+    }
+    
+    .home_slider_Main .slick-dots {
+        bottom: 15px;
+    }
+    
+    .homeSlider .newsLetterBanner {
+        bottom: 15px;
+        padding: 0 15px;
+    }
+    
+    .homeSlider  .input-wrapper {
+        height: 45px;
+    }
+    
+    .homeSlider .newsLetterBanner input {
+        font-size: 14px;
+    }
+    
+    .homeSlider .subscribe-btn {
+        height: 38px;
+        padding: 0 15px !important;
+        font-size: 11px !important;
+    }
+}
+
+@media (max-width: 480px) {
+    .homeSlider {
+        padding: 0 10px 20px;
+    }
+    
+    .home_slider_Main .slick-slide {
+        min-height: 220px;
+    }
+    
+    .home_slider_Main .item {
+        height: 220px;
+    }
+    
+    .home_slider_Main  .info {
+        left: 4%;
+        max-width: 200px;
+    }
+    
+    .home_slider_Main  .info h2 {
+        font-size: 22px;
+    }
+    
+    .home_slider_Main .info p {
+        font-size: 12px;
+        margin-bottom: 10px;
+    }
+    
+    .home_slider_Main  .shop-btn {
+        padding: 8px 18px;
+        font-size: 11px;
+    }
+    
+    .homeSlider .newsLetterBanner {
+        flex-direction: column;
+        gap: 0;
+        bottom: 10px;
+    }
+    
+    .homeSlider  .input-wrapper {
+        height: 40px;
+    }
+    
+    .homeSlider  .subscribe-btn {
+        width: 100%;
+        margin-top: 8px;
+        height: 40px;
+    }
+}
+
+
+.home_slider_Main .slick-active {
+    animation: slideIn 0.6s ease-out ;
+}
+
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateX(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}

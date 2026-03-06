@@ -1,0 +1,7 @@
+.container-field1 {
+    display:flex;
+}
+.container-field1 .container-field2{
+    width:20%;
+    height:50%;
+}

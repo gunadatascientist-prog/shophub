@@ -1,0 +1,227 @@
+/* Navigation Bar Styles */
+.nav {
+  width: 100%;
+  height: 70px;
+  margin: auto;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  background: #fff;
+  position: relative;
+}
+
+.nav .container-fluid {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 30px;
+}
+
+/* Flexbox utility */
+.d-flex {
+  display: flex;
+}
+
+.align-items-center {
+  align-items: center;
+}
+
+/* Row and columns */
+.nav .row {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav .part1 {
+  flex: 0 0 25%;
+  max-width: 25%;
+}
+
+.nav .part2 {
+  flex: 0 0 53%;
+  max-width: 53%;
+}
+
+.nav .part3 {
+  flex: 0 0 22%;
+  max-width: 22%;
+}
+
+/* Category Tab Button */
+.nav .catTab {
+  background: #3bb77e;
+  color: #fff;
+  font-size: 15px;
+  font-weight: 500;
+  text-transform: capitalize;
+  padding: 12px 24px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 8px rgba(59, 183, 126, 0.3);
+}
+
+.nav .catTab:hover {
+  background: #2a9668;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(59, 183, 126, 0.4);
+}
+
+/* Menu Links Container (for part2) */
+.nav .menu-links {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav .menu-links .list-inline-item {
+  display: inline-block;
+  position: relative;
+}
+
+.nav .menu-links .list-inline-item a {
+  color: #333;
+  font-size: 15px;
+  font-weight: 500;
+  text-decoration: none;
+  padding: 10px 16px;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  display: block;
+}
+
+.nav .menu-links a:hover {
+  color: #3bb77e;
+  background: rgba(59, 183, 126, 0.1);
+}
+
+/* Dropdown Menu */
+.nav .dropdown_menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 220px;
+  background: #fff;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+  border-radius: 8px;
+  padding: 8px 0;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease;
+  z-index: 100;
+  margin-top: 10px;
+}
+
+.nav .menu-links .list-inline-item:hover .dropdown_menu {
+  opacity: 1;
+  visibility: visible;
+  margin-top: 0;
+}
+
+.nav .dropdown_menu ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav .dropdown_menu li {
+  display: block;
+}
+
+.nav .dropdown_menu li .MuiButton-root {
+  width: 100%;
+  text-align: left;
+  justify-content: flex-start;
+  color: #333;
+  text-transform: capitalize;
+  padding: 10px 16px;
+  font-size: 14px;
+}
+
+.nav .dropdown_menu li .MuiButton-root:hover {
+  background: rgba(59, 183, 126, 0.1);
+  color: #3bb77e;
+}
+
+.nav .dropdown_menu li a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Contact/Support section (for part3) */
+.nav .phNo {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.nav .phNo .headericon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  color: #3bb77e;
+}
+
+.nav .phNo .info h3 {
+  font-size: 18px;
+  font-weight: 600;
+  margin: 0;
+  color: #333;
+  line-height: 1.2;
+}
+
+.nav .phNo .info p {
+  font-size: 13px;
+  margin: 4px 0 0 0;
+  color: #666;
+}
+
+/* Responsive Design */
+@media (max-width: 992px) {
+  .nav .part1,
+  .nav .part2,
+  .nav .part3 {
+    flex: 0 0 100%;
+    max-width: 100%;
+    margin-bottom: 15px;
+  }
+
+  .nav .part2 {
+    order: 3;
+  }
+
+  .nav .menu-links {
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+
+  .nav .phNo {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 576px) {
+  .nav {
+    height: auto;
+    padding: 15px 0;
+  }
+
+  .nav .catTab {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .nav .menu-links .list-inline-item a {
+    padding: 8px 12px;
+    font-size: 14px;
+  }
+}

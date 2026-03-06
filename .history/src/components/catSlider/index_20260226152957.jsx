@@ -1,0 +1,95 @@
+import React from "react";
+import Slider from "react-slick";
+import "./Style.css";
+
+const CatSlider = () => {
+
+  const settings = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 9,
+    slidesToScroll: 1,
+    fade : false,
+    arrows : true
+  };
+
+  return (
+    <>
+    <div className='catSlidersection'>
+        <div className='container-fluid'>
+            <h2 className='hd'>Featured Categories</h2>
+            <Slider {...settings} className='cat_slider_Main'>
+                <div className='item'>
+                <div className="info">
+                <img src='https://wp.alithemes.com/html/nest/demo/assets/imgs/shop/cat-13.png' alt="Cake & Milk"/>
+                <h5>Cake & Milk</h5>
+                <p>26 items</p>
+                </div>
+                </div>
+                <div className='item'>
+                <div className="info">
+                <img src='https://wp.alithemes.com/html/nest/demo/assets/imgs/shop/cat-13.png' alt"/>
+                <h5>Cake &="Cake & Milk Milk</h5>
+                <p>26 items</p>
+                </div>
+                </div>
+                <div className='item'>
+                <div className="info">
+                <img src='https://wp.alithemes.com/html/nest/demo/assets/imgs/shop/cat-13.png' alt="Cake & Milk"/>
+                <h5>Cake & Milk</h5>
+                <p>26 items</p>
+                </div>
+                </div>
+                <div className='item'>
+                <div className="info">
+                <img src='https://wp.alithemes.com/html/nest/demo/assets/imgs/shop/cat-13.png' alt="Cake & Milk"/>
+                <h5>Cake & Milk</h5>
+                <p>26 items</p>
+                </div>
+                </div>
+                <div className='item'>
+                <div className="info">
+                <img src='https://wp.alithemes.com/html/nest/demo/assets/imgs/shop/cat-13.png' alt="Cake & Milk"/>
+                <h5>Cake & Milk</h5>
+                <p>26 items</p>
+                </div>
+                </div>
+                <div className='item'>
+                <div className="info">
+                <img src='https://wp.alithemes.com/html/nest/demo/assets/imgs/shop/cat-13.png' alt="Cake & Milk"/>
+                <h5>Cake & Milk</h5>
+                <p>26 items</p>
+                </div>
+                </div>
+                <div className='item'>
+                <div className="info">
+                <img src='https://wp.alithemes.com/html/nest/demo/assets/imgs/shop/cat-13.png' alt="Cake & Milk"/>
+                <h5>Cake & Milk</h5>
+                <p>26 items</p>
+                </div>
+                </div>
+                <div className='item'>
+                <div className="info">
+                <img src='https://wp.alithemes.com/html/nest/demo/assets/imgs/shop/cat-13.png' alt="Cake & Milk"/>
+                <h5>Cake & Milk</h5>
+                <p>26 items</p>
+                </div>
+                </div>
+                <div className='item'>
+                <div className="info">
+                <img src='https://wp.alithemes.com/html/nest/demo/assets/imgs/shop/cat-13.png' alt="Cake & Milk"/>
+                <h5>Cake & Milk</h5>
+                <p>26 items</p>
+                </div>
+                </div>
+            </Slider>
+        </div>
+    </div>
+    <br/><br/><br/><br/><br/><br/><br/>
+<br/>
+    </>
+  );
+};
+
+export default CatSlider;

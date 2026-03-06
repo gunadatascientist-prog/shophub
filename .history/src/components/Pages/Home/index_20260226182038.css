@@ -1,0 +1,57 @@
+.homeProducts {
+    margin-bottom: 200px;
+    padding: 25px 0;
+}
+
+/* Heading */
+.homeProducts .hd {
+    font-size: 28px;
+    font-weight: 700;
+    color: #253d4e;
+    margin: 0;
+    white-space: nowrap;
+}
+
+/* Category list */
+.homeProducts .list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px 18px;
+    list-style: none;
+    padding: 0;
+    margin: 0 0 0 30px;
+    align-items: center;
+}
+
+/* Button reset + base style */
+.homeProducts .list li button {
+    background: transparent;
+    border: 1px solid transparent;
+    padding: 6px 14px;
+    font-size: 15px;
+    font-weight: 500;
+    color: #253d4e;
+    cursor: pointer;
+    border-radius: 20px;
+    transition: all 0.25s ease;
+    white-space: nowrap;
+}
+
+/* Hover effect */
+.homeProducts .list li button:hover {
+    color: #3bb77e;
+    background-color: #f0faf5;
+    border-color: #3bb77e;
+}
+
+/* Active category (optional – future ready) */
+.homeProducts .list li button.active {
+    color: #fff;
+    background-color: #3bb77e;
+    border-color: #3bb77e;
+}
+
+/* Remove ugly button focus outline */
+.homeProducts .list li button:focus {
+    outline: none;
+}
